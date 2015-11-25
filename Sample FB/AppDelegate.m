@@ -14,6 +14,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    FBBViewController *viewCntrler=[[FBBViewController alloc]initWithNibName:@"FBBViewController" bundle:nil];
+    [self.window setRootViewController:viewCntrler];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
